@@ -99,13 +99,17 @@ class Analysis():
 
         #Knee/Elbow point should be the point with max. absolute second derivative
 
-
-analysisNew = "C:\\Users\\Melissa\\OneDrive - Lancaster University\\Jobs & Internships\\FUSE 2020\\Data Analysis\\Analysis\\Analysis New\\"
-analysisOriginal = "C:\\Users\\Melissa\\OneDrive - Lancaster University\\Jobs & Internships\\FUSE 2020\\Data Analysis\\Analysis\\Analysis Original\\"
-analysisOriginalTime = "C:\\Users\\Melissa\\OneDrive - Lancaster University\\Jobs & Internships\\FUSE 2020\\Data Analysis\\Analysis\\Analysis Original Time\\"
+'''
+Created variables to store different paths for easy switching 
+'''
+NewAcH = "C:\\Users\\Melissa\\OneDrive - Lancaster University\\Jobs & Internships\\FUSE 2020\\Data Analysis\\Analysis\\Analysis New\\AcH\\"
+NewHCl = "C:\\Users\\Melissa\\OneDrive - Lancaster University\\Jobs & Internships\\FUSE 2020\\Data Analysis\\Analysis\\Analysis New\\HCl\\"
+NewRef = "C:\\Users\\Melissa\\OneDrive - Lancaster University\\Jobs & Internships\\FUSE 2020\\Data Analysis\\Analysis\\Analysis New\\References\\"
+Original = "C:\\Users\\Melissa\\OneDrive - Lancaster University\\Jobs & Internships\\FUSE 2020\\Data Analysis\\Analysis\\Analysis Original\\"
+OriginalTime = "C:\\Users\\Melissa\\OneDrive - Lancaster University\\Jobs & Internships\\FUSE 2020\\Data Analysis\\Analysis\\Analysis Original Time\\"
 
 '''Finds all files with file extension .mpr and appends them to a list called mpr_files. The sorted() function arranges them in alphabetical order.'''
-mpr_files = sorted(glob.glob(analysisOriginal + '*.mpr')) 
+mpr_files = sorted(glob.glob(NewRef + '*.mpr')) 
 #print('\n'.join(mpr_files))
 
 
