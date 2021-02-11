@@ -9,6 +9,19 @@ Optimising Artificial SEI (Solid Electrolyte Interphase) Formation in Li-S Batte
 
 Introductory paragraph
 
+## Getting Started
+
+### Prerequisites
+The following Python packages will require installation before use:
+- `galvani`
+- `pandas`
+- `numpy`
+- `glob`
+- `os`
+- `seaborn`
+- `matplotlib`
+- `kneed`
+
 ## Built With
 
 * [Python](https://github.com/python/cpython)
