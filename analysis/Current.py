@@ -17,7 +17,7 @@ mpr_files = sorted(glob.glob(analysisOriginalTime + '*.txt'))
 
 for i, eChemFile in enumerate(mpr_files):
     df = pd.read_csv(eChemFile, sep='\t', skiprows=0, header=0)
-    df = df.loc[:, ~df.columns.str.contains('^Unnamed')]        #gets rid of the Unnamed column
+    df = df.loc[:, ~df.columns.str.contains('^Unnamed')]        #gets rid of the Unnamed column in the dataframe
     finaltime = df['time/s'].iloc[-1]   #finds final value in the time column 
 
     print("\n \n" + os.path.basename(eChemFile))
