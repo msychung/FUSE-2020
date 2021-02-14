@@ -5,7 +5,7 @@ from numpy import matlib
 import pandas as pd
 
 '''
-Plotting scatter graphs of nucleation overpotential vs current at constant voltage hold end, grouped by time held at constant voltage. 
+Plotting scatter graphs of nucleation overpotential vs. current at constant voltage hold end, grouped by time held at constant voltage. 
 Passed in results manually due to small data pool.
 '''
 
@@ -39,7 +39,7 @@ plt.scatter(Voltages2, Currents2, s=12, c='#FDB515', marker='D')
 plt.scatter(Voltages3, Currents3, s=18, c='#3BA9C6', marker='D')
 plt.scatter(Voltages4, Currents4, s=18, c='#B41E8E', marker='D')
 
-'''Draws straight line trendlines through the data - ended up not being very useful.'''
+'''Draws straight line trendlines through the data - ended up not being very useful, since trends were more exponential than linear.'''
 # data = {'Voltages': [-0.57699948549270600, -0.993000000000000000, -0.67661249637603700, -0.40689000487327500, -0.38363334536552400, -0.51062619686126700, -0.44314351677894500],
 #         'Currents': [-0.126, -0.025, -0.077, -0.075, -0.116, -0.033, -0.060],
 #         'Time': [23.38176994, 77.98236238, 20.28648312, 24.00559746, 9.616464154, 69.78085042, 13.26404527]}
