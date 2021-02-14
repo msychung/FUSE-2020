@@ -154,6 +154,7 @@ for i, eChemFile in enumerate(mpr_files):
     print("Time at nucleation overpotential:", VertIndex, "min")
     print("Nucleation overpotential:", Voltage[VertIndex], "V")
 
+    '''Calls the plotting function. Comment this out to avoid viewing plots every time.'''
     plotGraph()
 
     '''Some flow control statements to restrict/avoid file plots displayed.'''
