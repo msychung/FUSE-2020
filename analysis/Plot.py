@@ -3,7 +3,7 @@ import numpy as np
 import matplotlib.ticker as ticker
 from numpy import matlib
 
-'''Plotting all initial results next to each other. Passed in resultd manually due to small data pool.'''
+'''Plotting all initial results next to each other. Passed in results manually due to small data pool.'''
 
 fig = plt.figure()
 fig.set_size_inches(10, 6)
