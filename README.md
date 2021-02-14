@@ -37,6 +37,8 @@ To install a package, enter the following in the command line:
 ### Installation & Usage
 Following a download or clone of this repository to your local machine, please ensure `BioLogic.py` remains within the same folder as all analysis files to run. (Some of) The code depends on the `galvani` (see below) package's BioLogic module, and will not run without it.  
 
+All files require identification of a path to which a folder of .mpr (or sometimes .txt) files are stored. The data for this project was collected using [EC-Lab Software](https://www.biologic.net/support-software/ec-lab-software/ "EC-Lab"), and may be hard to reproduce without similar software. Due to the virtual nature of the project, the data used was collected externally to the internship, and hence may not be circulated in the public domain. However, all data contained information for the working electrode potential (V), time (s), and sometimes current (mA). This was collected during Lithium plating on various electrodes, using the constant voltage hold method across different timescales and constant voltages.
+
 ## Built With
 
 * [Python](https://github.com/python/cpython "GitHub Python page")
