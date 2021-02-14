@@ -125,6 +125,7 @@ def main(fileObject):
     
     for i, eChemFile in enumerate(mpr_files):   
         
+        '''Read in .mpr files as pandas dataframes, then concert to numpy arrays'''
         mpr = BioLogic.MPRfile(eChemFile)
         df = pd.DataFrame(mpr.data)
         df = df.loc[:, df.columns.intersection(['time/s','Ewe/V'])]     # gets rid of irrelevant data
