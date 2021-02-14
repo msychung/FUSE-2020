@@ -38,7 +38,7 @@ def plotGraphCut():
 
     ax.scatter(np_data[:,3], np_data[:,1], color='black', marker='x', s=2)
 
-    ax.set_xlabel('Time / min').set_style('italic')
+    ax.set_xlabel('Time / min').set_style('italic') 
     ax.set_ylabel('$E_{we} / V$').set_style('italic')
 
     Title = os.path.basename(eChemFile)  
@@ -104,7 +104,7 @@ def barComparison():
 
 '''MAIN'''
 for i, eChemFile in enumerate(mpr_files):
-    '''Read in .mpr files as pandas dataframes, then concert to numpy arrays'''
+    '''Read in .mpr files as pandas dataframes, then convert to numpy arrays'''
     mpr = BioLogic.MPRfile(eChemFile)
     df = pd.DataFrame(mpr.data)
     df = df.loc[:, df.columns.intersection(['time/s', 'Ewe/V'])]
@@ -144,8 +144,8 @@ for i, eChemFile in enumerate(mpr_files):
     plotGraphCut()
 
     '''Change number to restrict number file plots displayed when run.'''
-    if i + 1 == 10:
-        break
+    # if i + 1 == 10:
+    #     break
 
 '''Calls the bar comparison function. Comment this out to avoid viewing the comparison chart.'''
 barComparison()
