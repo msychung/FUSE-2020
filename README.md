@@ -35,7 +35,7 @@ To install a package, enter the following in the command line:
 ```
 
 ### Installation & Usage
-Following a download or clone of this repository to your local machine, please ensure `BioLogic.py` remains within the same folder as all analysis files to run. The code depends on the `galvani` (see below) package's BioLogic module, and will not run without it.  
+Following a download or clone of this repository to your local machine, please ensure `BioLogic.py` remains within the same folder as all analysis files to run. (Some of) The code depends on the `galvani` (see below) package's BioLogic module, and will not run without it.  
 
 ## Built With
 
