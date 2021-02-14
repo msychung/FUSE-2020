@@ -28,4 +28,4 @@ for i, eChemFileCurrent in enumerate(current_mpr_files):
     # PlatingCurrent = pd.DataFrame(dict(pos=m, val=df.lookup(m, m.index)))
 
     print('\n', os.path.basename(eChemFileCurrent))
-    print(Currents[val+3])  # Not 100% sure why I added 3 to the index...sorry!
+    print("Plating Current is:", Currents[val+3], "mA")  # Not 100% sure why I added 3 to the index...sorry!
