@@ -1,13 +1,7 @@
-import BioLogic
 import pandas as pd
 import numpy as np
-import seaborn as sns
 import glob
 import os.path
-import matplotlib.pyplot as plt
-import matplotlib.ticker as ticker
-from matplotlib.ticker import FormatStrFormatter
-from numpy import diff
 
 '''
 Finds final recorded time for sample set, and returns the two nearest data points (time and current) to 64800 seconds.
